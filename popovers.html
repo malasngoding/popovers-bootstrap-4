@@ -1,0 +1,63 @@
+<!doctype html> 
+<html> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css"> 
+	<title>Tutorial Popovers Dengan Bootstrap 4 - www.malasngoding.com</title> 
+</head> 
+<body> 
+
+
+	<div class="container">
+
+		<center>
+			<h3>Tutorial Popovers Dengan Bootstrap 4</h3>
+			<h4><a href="https://www.malasngoding.com/popovers-bootstrap-4/">www.malasngoding.com</a></h4>
+		</center>
+
+
+		<br/>
+		<br/>
+		Contoh Popover
+		<br/>
+		<button type="button" class="btn btn-primary" data-toggle="popover" title="Halo, malasngoding" data-content="Ini adalah contoh konten informasi tentang tombol ini. Untuk contoh popovers">KLIK SAYA</button>
+		
+		<br/>
+		<hr>
+		<br/>
+
+		Posisi Popover
+		<br/>
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Halo, malasngoding" data-content="Ini adalah contoh popover yang berada di atas.">ATAS</button>
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="right" title="Halo, malasngoding" data-content="Ini adalah contoh popover yang berada di kanan.">KANAN</button>
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" title="Halo, malasngoding" data-content="Ini adalah contoh popover yang berada di bawah.">BAWAH</button>
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="left" title="Halo, malasngoding" data-content="Ini adalah contoh popover yang berada di kiri.">KIRI</button>
+
+
+	</div>
+
+
+	<script src="assets/js/jquery.js"></script> 
+	<script src="assets/js/popper.js"></script> 
+	<script src="assets/js/bootstrap.js"></script>
+
+<script>
+
+
+	
+
+
+	$(function (){
+		$('[data-toggle="popover"]').popover({
+			trigger: 'focus'
+		});
+	});
+
+	// $('.popover-dismiss').popover({
+	// 	trigger: 'focus'
+	// })
+</script>
+</body> 
+</html>
